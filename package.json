@@ -30,7 +30,7 @@
   "dependencies": {
     "debug": "^2.2.0",
     "ipaddr.js": "~0.1.3",
-    "native-dns-cache": "https://github.com/bymaximus/native-dns-cache.git",
+    "native-dns-cache": "https://github.com/bymaximus/native-dns-cache/tarball/82a021a96f28d18b6d2fee1ed412a9516625a300",
     "native-dns-packet": "~0.1.1"
   },
   "devDependencies": {
