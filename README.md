@@ -2,6 +2,8 @@
 
 # native-dns -- A replacement DNS stack for node.js
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/valoran-labs/node-native-dns.svg)](https://greenkeeper.io/)
+
 ## Installation
 
 ```
