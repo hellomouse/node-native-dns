@@ -1,34 +1,20 @@
-[![wercker status](https://app.wercker.com/status/ed5cab9035dfb9167714f305340490c2/s/master "wercker status")](https://app.wercker.com/project/byKey/ed5cab9035dfb9167714f305340490c2)
-[![Build Status](https://secure.travis-ci.org/tjfontaine/node-dns.png)](http://travis-ci.org/tjfontaine/node-dns)
+[![Build Status](https://secure.travis-ci.org/valoran-labs/node-native-dns.png)](http://travis-ci.org/valoran-labs/node-native-dns)
 
-native-dns -- A replacement DNS stack for node.js
-=================================================
+# native-dns -- A replacement DNS stack for node.js
 
-# Maintenance
-
-This project is not actively maintained, it's left here for historical reasons,
-and when I (TJ) have time I come back to it.
-
-Feel free to fork and name the repo and npm package whatever you will.
-
-# (Below follows original README)
-
-Installation
-------------
+## Installation
 
 ```
-npm install native-dns
+npm install https://github.com/valoran-labs/node-native-dns
 ```
 
-Client
-------
+## Client
 
 native-dns exports what should be a 1:1 mapping of the upstream node.js dns
 module. That is to say if it's listed in the [docs](http://nodejs.org/docs/latest/api/dns.html)
-it should behave similarly. If it doesn't please file an [issue](https://github.com/tjfontaine/node-dns/issues/new).
+it should behave similarly. If it doesn't please file an [issue](https://github.com/valoran-labs/node-native-dns/issues/new).
 
-Request
--------
+### Request
 
 Beyond matching the upstream module, native-dns also provides a method for
 customizing queries.
@@ -98,8 +84,7 @@ answer is an instance of `Packet`
  * `cancelled` -- Fired if the request is cancelled
  * `end` -- Always fired after a request finished, regardless of disposition
 
-Platform
---------
+### Platform
 
 If you want to customize all `resolve` or `lookup`s with the replacement client
 stack you can modify the platform settings accessible in the top level `platform`
@@ -134,8 +119,7 @@ Events:
  * `unready` -- Emitted when hosts and name servers configuration is being
 reloaded.
 
-Server
-------
+## Server
 
 There is also a rudimentary server implementation
 
@@ -195,8 +179,7 @@ DoTheRightThing
  * `error` -- emitted when unable to properly unpack the packet, passed `(err, msg, response)`
  * `socketError` -- remap of the underlying socket for the server, passes `(err, socket)`
 
-Packet
-------
+### Packet
 
 Properties:
 
@@ -225,8 +208,7 @@ Methods:
 
  * `send()` -- Handles sending the packet to the right end point
 
-Question
---------
+### Question
 
 A `Question` is instantiated by passing an object like:
 
@@ -235,8 +217,7 @@ A `Question` is instantiated by passing an object like:
 value, see `consts.NAME_TO_QTYPE` (default: 'A')
  * `class` -- The class of service, default to 1 meaning internet
 
-ResourceRecord
---------------
+### ResourceRecord
 
 ResourceRecords are what populate `answer`, `authority`, and `additional`.
 This is a generic type, and each derived type inherits the following properties:
@@ -281,3 +262,8 @@ Available Types:
   - `service` -- string
   - `regexp` -- string
   - `replacement` -- string
+
+## History
+
+This project was originally created by [tjfontaine](https://github.com/tjfontaine)
+and is now being maintained by valoran-labs.

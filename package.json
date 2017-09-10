@@ -13,25 +13,25 @@
     "bind",
     "native"
   ],
-  "homepage": "http://github.com/tjfontaine/node-dns",
+  "homepage": "https://github.com/valoran-labs/node-native-dns",
   "bugs": {
-    "url": "http://github.com/tjfontaine/node-dns/issues"
+    "url": "https://github.com/valoran-labs/node-native-dns/issues"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/tjfontaine/node-dns.git"
+    "url": "https://github.com/valoran-labs/node-native-dns"
   },
   "main": "dns.js",
   "engines": {
-    "node": ">= 0.5.0"
+    "node": ">= 6.11.3"
   },
   "scripts": {
     "test": "nodeunit test"
   },
   "dependencies": {
     "ipaddr.js": "~0.1.3",
-    "native-dns-cache": "~0.0.2",
-    "native-dns-packet": "~0.1.1"
+    "native-dns-packet": "https://github.com/valoran-labs/node-native-dns-packet",
+    "native-dns-cache": "https://github.com/valoran-labs/node-native-dns-cache"
   },
   "devDependencies": {
     "optimist": "",

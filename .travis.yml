@@ -1,8 +1,8 @@
 language: node_js
 node_js:
-   - "0.10"
-   - "0.12"
+   - "6.11"
+   - "8.4"
 notifications:
   irc:
     channels:
-      - "irc.oftc.net#native-dns"
+      - "irc.freenode.net#valoran-dev"
