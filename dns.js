@@ -65,6 +65,9 @@ var definedTypes = [
   'SRV',
   'SOA',
   'TLSA',
+  'DNSKEY',
+  'SSHFP',
+  'CAA',
 ].forEach(function (type) {
   exports[type] = function (opts) {
     var obj = {};
