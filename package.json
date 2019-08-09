@@ -13,13 +13,13 @@
     "bind",
     "native"
   ],
-  "homepage": "https://github.com/valoran-labs/node-native-dns",
+  "homepage": "https://github.com/hellomouse/node-native-dns",
   "bugs": {
-    "url": "https://github.com/valoran-labs/node-native-dns/issues"
+    "url": "https://github.com/hellomouse/node-native-dns/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/valoran-labs/node-native-dns"
+    "url": "https://github.com/hellomouse/node-native-dns"
   },
   "main": "dns.js",
   "engines": {
@@ -29,9 +29,9 @@
     "test": "nodeunit test"
   },
   "dependencies": {
-    "ipaddr.js": "~1.5.2",
-    "native-dns-packet": "https://github.com/valoran-labs/node-native-dns-packet",
-    "native-dns-cache": "https://github.com/valoran-labs/node-native-dns-cache"
+    "ipaddr.js": "~1.9.1",
+    "native-dns-packet": "https://github.com/hellomouse/node-native-dns-packet",
+    "native-dns-cache": "https://github.com/hellomouse/node-native-dns-cache"
   },
   "devDependencies": {
     "optimist": "",

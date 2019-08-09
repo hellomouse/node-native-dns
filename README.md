@@ -1,20 +1,18 @@
-[![Build Status](https://secure.travis-ci.org/valoran-labs/node-native-dns.png)](http://travis-ci.org/valoran-labs/node-native-dns)
-
 # native-dns -- A replacement DNS stack for node.js
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/valoran-labs/node-native-dns.svg)](https://greenkeeper.io/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/hellomouse/node-native-dns.svg)](https://greenkeeper.io/)
 
 ## Installation
 
 ```
-npm install https://github.com/valoran-labs/node-native-dns
+npm install https://github.com/hellomouse/node-native-dns
 ```
 
 ## Client
 
 native-dns exports what should be a 1:1 mapping of the upstream node.js dns
 module. That is to say if it's listed in the [docs](http://nodejs.org/docs/latest/api/dns.html)
-it should behave similarly. If it doesn't please file an [issue](https://github.com/valoran-labs/node-native-dns/issues/new).
+it should behave similarly. If it doesn't please file an [issue](https://github.com/hellomouse/node-native-dns/issues/new).
 
 ### Request
 
@@ -268,4 +266,4 @@ Available Types:
 ## History
 
 This project was originally created by [tjfontaine](https://github.com/tjfontaine)
-and is now being maintained by valoran-labs.
+and is now being maintained by hellomouse.

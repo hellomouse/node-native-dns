@@ -68,6 +68,7 @@ var definedTypes = [
   'DNSKEY',
   'SSHFP',
   'CAA',
+  'URI'
 ].forEach(function (type) {
   exports[type] = function (opts) {
     var obj = {};
